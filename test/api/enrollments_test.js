@@ -18,7 +18,6 @@ describe('basic enrollments crud', function() {
       expect(res.body.courseId).to.eql('507f191e810c19729de860ea');
       expect(res.body).to.have.property('_id');
       id = res.body._id;
-      console.log(id);
       done();
     });
   });

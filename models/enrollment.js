@@ -2,6 +2,7 @@
 var mongoose = require('mongoose');
 
 var enrollmentSchema = mongoose.Schema({
+  verified: {type:Boolean, default: false},
   studentId: {type: String},
   courseId: {type: String}
 });

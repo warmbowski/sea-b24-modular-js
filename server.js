@@ -11,6 +11,7 @@ mongoose.connect(process.env.MONGOLAB_URI || process.env.MONGO_URL || 'mongodb:/
 require('./routes/courses_routes')(app);
 require('./routes/enrollments_routes')(app);
 require('./routes/students_routes')(app);
+require('./routes/queries')(app);
 
 app.set('port', process.env.PORT || 3000);
 app.listen(app.get('port'), function() {
