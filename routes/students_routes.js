@@ -33,7 +33,7 @@ module.exports = function(app) {
     });
   });
 
-  app.delete('/api/Ctudents/:id', function(req, res) {
+  app.delete('/api/students/:id', function(req, res) {
     Student.remove({_id: req.params.id}, function(err) {
       if (err) return res.status(500).send('there was an error');
       res.json({msg: 'success!'});

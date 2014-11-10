@@ -11,7 +11,7 @@ describe('basic students crud', function() {
   it('should be able to create a student', function(done) {
     chai.request('http://localhost:3000')
     .post('/api/students')
-    .send({studentName: 'Calculus', priority: 1})
+    .send({studentName: 'Fredford Bedford'})
     .end(function(err, res) {
       expect(err).to.eql(null);
       expect(res.body.studentName).to.eql('Fredford Bedford');
@@ -37,7 +37,6 @@ describe('basic students crud', function() {
     .end(function(err, res) {
       expect(err).to.eql(null);
       expect(res.body.studentName).to.eql('Fredford Bedford');
-      expect(res.body.priority).to.eql(1);
       done();
     });
   });
