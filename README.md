@@ -1,7 +1,7 @@
 <h1>Modular JS</h1>
 <h3>CommonJS Modules, Clean Code, and Create Your Has-Many app</h3>
 
-<!-- <img src=''/> -->
+<img src='https://travis-ci.org/warmbowski/sea-b24-modular-js.svg'/>
 
 Assignment for CF B24:
 
